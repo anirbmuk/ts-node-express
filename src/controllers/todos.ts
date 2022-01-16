@@ -23,7 +23,7 @@ const _TODOS: Todo[] = [
     text: 'Fifth TODO',
   },
 ]
-let _INDEX = 3
+let _INDEX = 6
 
 export const createTodo: RequestHandler = (req, res) => {
   const text = (req.body as { text: string }).text
