@@ -28,8 +28,6 @@ app.use('/todos', todoRoutes)
 
 app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
   const { code, message } = handleError(err.message)
-  console.warn(code)
-  console.error(message)
   res.status(code).send({ code, message })
 })
 
